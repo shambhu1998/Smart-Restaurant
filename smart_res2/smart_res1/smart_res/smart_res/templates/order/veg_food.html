@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Please, Select your vegetarian food items!</h1>
+    {% if veg_records %}
+    {% for record in veg_records %}
+           {{ record.food_name }}
+           {{ record.price}}
+
+           <form  method="post">
+             {{ form.as_p }}
+             {% csrf_token %}
+             <input type="submit" name="" value="Submit">
+
+    {% endfor %}
+    {% else %}
+      <h1> No access records found </h1>
+    {% endif %}
+  </div>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <div class="p-3 mb-2 bg-primary text-white">
+        <h1>Please select your table number.</h1>
+        <a href="{% url 'order:veg_food' %}">Vegetarian</a>
+        <a href="{% url 'order:nonveg_food' %}">Non-vegetarian</a>
+        <a href="{% url 'order:drinks' %}">Drinks</a>
+      </div>
+
+    </div>
+  </body>
+</html>
